@@ -9,7 +9,7 @@ class Solution(object):
         Use dp method to solve this problem
         '''
         m,n=len(s),len(p)
-        dp = [[False for _ in range(m+1)] for _ in range(n+1)] # don't use dp=[[False]*m]*n 
+        dp = [[False for _ in range(m+1)] for _ in range(n+1)] # don't use dp=[[False]*m]*n
         dp[0][0] = True
         for j in range(n):
             tmp = dp[j][0] and p[j]=='*'
